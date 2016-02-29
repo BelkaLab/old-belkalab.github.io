@@ -8,13 +8,14 @@
 # Site settings
 title: Code @ Belka
 email: hello@belka.us
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   We are a design and software development team specialized in custom solutions.
   We are passionate about creating iOS, Android and Web apps .
   We have proudly helped to innovate and implement new technologies enterprises, startups and some crazy visionary.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://belka.us" # the base hostname & protocol for your site
 twitter_username: BelkaDigitalLab
+permalink: "/:title"
 
 # Build settings
 markdown: kramdown

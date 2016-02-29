@@ -427,6 +427,11 @@ a:focus {
   border-radius: 10px;
 }
 
+.project-header-iamge {
+	display: block;
+	margin: auto;
+}
+
 .ctitle {
 	color: {{ site.colors.primary }};
 	font-weight: 700;
