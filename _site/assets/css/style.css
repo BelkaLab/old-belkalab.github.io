@@ -6,8 +6,8 @@
 	Project Name: SOLID - Bootstrap 3 Theme
 	Version: 1.0
 	URL: http://alvarez.is
-	
-################################################################# */ 
+
+################################################################# */
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,700,900);
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 @import url("prettyPhoto.css") screen;
@@ -16,16 +16,16 @@
 /*	################################################################
 	1. GENERAL STRUCTURES
 ################################################################# */
-	* { 
+	* {
 		margin: 0;
 		padding: 0px;
-	} 
+	}
 
-body { 
-	background: #ffffff; 
-	margin: 0; 
-	height: 100%; 
-	color: ;
+body {
+	background: #ffffff;
+	margin: 0;
+	height: 100%;
+	color: #384052;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
 	}
@@ -35,15 +35,15 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 }
 
-p { 
-	padding: 0; 
-	margin-bottom: 12px; 
+p {
+	padding: 0;
+	margin-bottom: 12px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 14px; 
+	font-size: 14px;
 	line-height: 24px;
-	color: ; 
-	margin-top: 10px; 
+	color: #384052;
+	margin-top: 10px;
 }
 
 img {
@@ -61,11 +61,11 @@ ol {
     padding-left: 26px;
 }
 
-a { 
-    color:;
+a {
+    color:#428bca;
     padding: 0;
 	margin: 0;
-	text-decoration: none; 
+	text-decoration: none;
 	-webkit-transition: background-color .4s linear, color .4s linear;
 	-moz-transition: background-color .4s linear, color .4s linear;
 	-o-transition: background-color .4s linear, color .4s linear;
@@ -75,18 +75,18 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
-  color:;
+  color:#01b2fe;
 }
 
 ::-moz-selection  {
 	color: #fff;
 	text-shadow:none;
-	background:;
+	background:#384052;
 }
 ::selection {
 	color: #fff;
 	text-shadow:none;
-	background:;
+	background:#384052;
 }
 
 .centered {
@@ -103,8 +103,11 @@ a:focus {
 }
 
 .navbar-brand {
+	margin-left: 10px !important;
+	font-size: 1.5em !important;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 900;
+	float: right;
 }
 
 .navbar-header .navbar-brand {
@@ -118,21 +121,26 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a:hover {
-	color: ;
+	color: #FFFFFF;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: ;
+	color: #FFFFFF;
 	background-color: transparent;
 }
 
 .navbar-default {
-	background-color: ;
+	background-color: #384052;
 	border-color: transparent;
 }
 
+.navbar-belka-logo {
+	margin-top: 5px;
+	height: 40px;
+}
+
 .dropdown-menu {
-	background: ;
+	background: #384052;
 }
 
 .dropdown-menu > li > a {
@@ -143,8 +151,8 @@ a:focus {
 
 .btn-theme {
   color: #fff;
-  background-color: ;
-  border-color: ;
+  background-color: #384052;
+  border-color: #384052;
   margin: 4px;
 }
 .btn-theme:hover,
@@ -153,8 +161,8 @@ a:focus {
 .btn-theme.active,
 .open .dropdown-toggle.btn-theme {
   color: #fff;
-  background-color: ;
-  border-color: ;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .dmbutton:hover,
@@ -204,7 +212,7 @@ a:focus {
 }
 
 .hline {
-	border-bottom: 2px solid ;
+	border-bottom: 2px solid #384052;
 }
 
 .hline-w {
@@ -216,7 +224,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: ;
+	background-color: #FFFFFF;
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
@@ -244,7 +252,7 @@ a:focus {
 }
 
 #service i {
-	color: ;
+	color: #FFFFFF;
 	font-size: 60px;
 	padding: 15px;
 }
@@ -292,15 +300,15 @@ a:focus {
 {
 	height:100%;
 	width:100%;
-	background-color:;
-	background-color:rgba(,.9);
+	background-color:#FFFFFF;
+	background-color:rgba(0,179,254,.9);
 	text-align:center;
 }
 
 /* Testimonials Wrap */
 #twrapback {
-    background-color: ;
-    background-color:rgba(,.8);
+    background-color: #FFFFFF;
+    background-color:rgba(0,179,254,.8);
     position: absolute;
     top: 0;
     left: 0;
@@ -318,7 +326,7 @@ a:focus {
 	background-position: center center;
 	min-height: 450px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -358,25 +366,25 @@ a:focus {
 #footerwrap {
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background: ;
+	background: #384052;
 }
 
 #footerwrap p {
-	color: ;
+	color: #bfc9d3;
 }
 
 #footerwrap h4 {
-	color: ;
+	color: #ffffff;
 }
 
 #footerwrap i {
 	font-size: 30px;
-	color: ;
+	color: #bfc9d3;
 	padding-right: 25px;
 }
 
 #footerwrap i:hover {
-	color: 
+	color: #FFFFFF
 }
 
 /*	################################################################
@@ -385,7 +393,7 @@ a:focus {
 /* General Tweaks */
 
 #blue {
-	background: ;
+	background: #FFFFFF;
 	margin-top: 60px;
 	margin-bottom: 60px;
 	padding-top: 25px;
@@ -419,8 +427,13 @@ a:focus {
   border-radius: 10px;
 }
 
+.project-header-iamge {
+	display: block;
+	margin: auto;
+}
+
 .ctitle {
-	color: ;
+	color: #FFFFFF;
 	font-weight: 700;
 	margin-bottom: 15px;
 }
@@ -436,7 +449,7 @@ csmall {
 }
 
 .badge-theme {
-	background: ;
+	background: #FFFFFF;
 }
 
 /* Contact Page */
@@ -449,7 +462,7 @@ csmall {
 	background-position: center center;
 	min-height: 400px;
 	width: 100%;
-	
+
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
     -o-background-size: 100%;
@@ -462,27 +475,27 @@ csmall {
 }
 
 /* Blog Page */
-.popular-posts { 
+.popular-posts {
 	margin: 0px;
 	padding-left: 0px;
 	}
-	
+
 .popular-posts li {
-	list-style: none; 
-	margin-bottom: 20px; 
+	list-style: none;
+	margin-bottom: 20px;
 	min-height: 70px;
 }
-.popular-posts li a, 
+.popular-posts li a,
 .popular-posts li a:hover {
-	color:#2f2f2f; 
+	color:#2f2f2f;
 	text-decoration: none;
 	}
-	
+
 .popular-posts li img {
-	float: left; 
+	float: left;
 	margin-right: 20px;
 	}
-	
+
 .popular-posts li em {
 	font-family: 'Lato', sans-serif;
 	font-size: 12px;
@@ -492,7 +505,7 @@ csmall {
 .popular-posts p {
 	line-height: normal;
 	margin-bottom: auto;
-}	
+}
 
 .share i {
 	padding-right: 15px;
@@ -500,8 +513,8 @@ csmall {
 }
 
 a.anchor{
-    display: block; 
-    position: relative; 
-    top: -80px; 
+    display: block;
+    position: relative;
+    top: -80px;
     visibility: hidden;
 }
