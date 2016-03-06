@@ -3,6 +3,7 @@ layout: project
 title:  "GaugeView"
 categories:
 - project
+size: project-item--medium
 img: gaugeview_big.jpg
 thumb: gaugeview_thumb.jpg
 tagged: iOS, library, widget

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+{% include header.html %}
+
+<div class="container">
+  <div class="project-grid">
+      <div class="project-sizer"></div>
+      {% for project in site.categories['project'] %}
+        <div class="project-item {{ project.size }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">{{ project.title }}</span>
+          </div>
+        </div>
+      {% endfor %}
+  </div>
+</div>

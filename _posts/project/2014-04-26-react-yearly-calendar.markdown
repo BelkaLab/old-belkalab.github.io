@@ -1,8 +1,9 @@
 ---
 layout: project
-title:  "react-yearly-calendar"
+title:  "React Yearly Calendar"
 categories:
 - project
+size: project-item--normal
 img: react_calender.jpg
 thumb: react_calender.jpg
 tagged: React, library

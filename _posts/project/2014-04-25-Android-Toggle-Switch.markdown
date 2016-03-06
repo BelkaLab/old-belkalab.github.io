@@ -1,8 +1,9 @@
 ---
 layout: project
-title:  "Android-Toggle-Switch"
+title:  "Android Toggle Switch"
 categories:
 - project
+size: project-item--normal
 img: android_toggle_switch.jpg
 thumb: android_toggle_switch.jpg
 tagged: Android, library, widget
