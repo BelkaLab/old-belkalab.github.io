@@ -4,14 +4,23 @@ layout: default
 {% include header.html %}
 
 <div class="container">
+
+  <h1>Open Source Project</h1>
   <div class="project-grid">
       <div class="project-sizer"></div>
       {% for project in site.categories['project'] %}
+      <a href="{{project.url}}" />
         <div class="project-item {{ project.size }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
+
           <div class="project-item-title-container">
             <span class="project-item-title">{{ project.title }}</span>
           </div>
         </div>
+      </a>
       {% endfor %}
   </div>
+
+  <h1>Code Guideline</h1>
+
+
 </div>
