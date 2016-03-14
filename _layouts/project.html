@@ -4,9 +4,16 @@ layout: default
 
 <div class="container mt">
     <div class="row">
-
-        <img class="project-header-iamge" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="" />
-
+        <div class="col-md-12">
+            <h1> {{ page.title }}</h1> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <img class="project-header-iamge" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="{{ page.title }}" /> 
+        </div>
+    </div>
+    <div class="row">
         <div class="col-lg-5 col-lg-offset-1">
             <div class="spacing"></div>
 

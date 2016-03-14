@@ -227,7 +227,7 @@ a:focus {
 #headerwrap {
 	background-color: #FFFFFF;
 	min-height: 0px;
-	padding-top: 100px;
+	padding-top: 20px;
 	padding-bottom: 50px;
 	text-align: center;
 }
@@ -437,4 +437,21 @@ a:focus {
 	font-weight: 300;
 	font-size: 1.5em;
 	color: white;
+}
+
+#hero {
+	background: #000;
+	text-align: center;
+	min-height: 300px;
+}
+
+#hero h1 {
+	margin: 0;
+	color: #fff;
+}
+
+#librarywrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background: #eee;
 }
