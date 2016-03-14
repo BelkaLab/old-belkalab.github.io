@@ -464,5 +464,9 @@ a:focus {
 }
 
 .button:hover {
-	background: #ccc
+	background: #ccc	
+}
+
+.button-checked {
+	background: #01b2fe
 }

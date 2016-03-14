@@ -129,12 +129,6 @@
 
 
 <script>
-// (function () {
-//   $('.project-grid').masonry({
-//     itemSelector: '.project-item'
-//   });
-// })();
-
 (function () {
 	var $grid = $('.project-grid');
 
@@ -143,12 +137,16 @@
 	});
 
 	$('.filters').on('click', function (){
+
+		$('.filters').each(function() {
+			$(this).removeClass('button-checked');
+		});
+
 		var $this = $(this);
 		var filterValue = $this.attr('data-filter');
+		$this.addClass('button-checked');
 		$grid.isotope({ filter: filterValue });
 	});
-
-
 })();
 </script>
 

@@ -92,7 +92,7 @@
   <div class="button filters" data-filter=".iOS">iOS</div>
   <div class="button filters" data-filter=".Android">Android</div>
   <div class="button filters" data-filter=".web">Web</div>
-  <div class="button filters" data-filter="*">All</div>
+  <div class="button button-checked filters" data-filter="*">All</div>
 </div>
 </div>
 
@@ -151,12 +151,6 @@
 
 
 <script>
-// (function () {
-//   $('.project-grid').masonry({
-//     itemSelector: '.project-item'
-//   });
-// })();
-
 (function () {
 	var $grid = $('.project-grid');
 
@@ -165,12 +159,16 @@
 	});
 
 	$('.filters').on('click', function (){
+
+		$('.filters').each(function() {
+			$(this).removeClass('button-checked');
+		});
+
 		var $this = $(this);
 		var filterValue = $this.attr('data-filter');
+		$this.addClass('button-checked');
 		$grid.isotope({ filter: filterValue });
 	});
-
-
 })();
 </script>
 
