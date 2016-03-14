@@ -124,15 +124,31 @@
 <script src="/assets/js/jquery.min.js"></script>
 <!-- jQuery plugins -->
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/jquery.masonry.min.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
 
 
 
 <script>
+// (function () {
+//   $('.project-grid').masonry({
+//     itemSelector: '.project-item'
+//   });
+// })();
+
 (function () {
-  $('.project-grid').masonry({
-    itemSelector: '.project-item'
-  });
+	var $grid = $('.project-grid');
+
+	$grid.isotope({
+		itemSelector: '.project-item'
+	});
+
+	$('.filters').on('click', function (){
+		var $this = $(this);
+		var filterValue = $this.attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+
+
 })();
 </script>
 

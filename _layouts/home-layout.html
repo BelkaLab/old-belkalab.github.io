@@ -5,58 +5,26 @@ layout: default
 
 {% include hero.html %}
 
-<div class="container">
-
-  <h1>Open Source Project</h1>
-  <div class="project-grid">
+<div id="main">
+  <div class="container">
+    <h1>Open Source Project</h1>
+    <div class="project-grid">
       <div class="project-sizer"></div>
       {% for project in site.categories['project'] %}
       <a href="{{project.url}}" />
-        <div class="project-item {{ project.size }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
+      <div class="project-item {{ project.size }} {{ project.tags | join " " }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
 
-          <div class="project-item-title-container">
-            <span class="project-item-title">{{ project.title }}</span>
-          </div>
-        </div>
-      </a>
-      {% endfor %}
-  </div>
-
-</div>
-
-<div id="librarywrap">
-  <div class="container">
-    <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">iOS</a></li>
-        <li role="presentation"><a href="#Android" aria-controls="Android" role="tab" data-toggle="tab">Andorid</a></li>
-        <li role="presentation"><a href="#Web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="iOS">
-          <h4>iOS</h4>
-          {% for lib in site.tags['iOS'] %}
-          <a href="{{lib.url}}">{{lib.title}}</a><br>
-          {% endfor %}
-        </div>
-        <div role="tabpanel" class="tab-pane" id="Android">
-          <h4>Andorid</h4>
-          {% for lib in site.tags['Android'] %}
-          <a href="{{lib.url}}">{{lib.title}}</a><br>
-          {% endfor %}
-        </div>
-        <div role="tabpanel" class="tab-pane" id="Web">
-          <h4>Web</h4>
-          {% for lib in site.tags['web'] %}
-          <a href="{{lib.url}}">{{lib.title}}</a><br>
-          {% endfor %} 
+        <div class="project-item-title-container">
+          <span class="project-item-title">{{ project.title }}</span>
         </div>
       </div>
-    </div>
+    </a>
+    {% endfor %}
   </div>
+  
+  <div class="button filters" data-filter=".iOS">iOS</div>
+  <div class="button filters" data-filter=".Android">Android</div>
+  <div class="button filters" data-filter=".web">Web</div>
+  <div class="button filters" data-filter="*">All</div>
 </div>
-
-
+</div>

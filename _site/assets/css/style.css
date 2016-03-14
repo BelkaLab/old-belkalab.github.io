@@ -447,10 +447,22 @@ a:focus {
 #hero h1 {
 	margin: 0;
 	color: #fff;
+	line-height: 300px;
 }
 
-#librarywrap {
+#main {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	background: #fff;
+}
+
+.button {
+	cursor: pointer;
+	display: inline-block;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+.button:hover {
+	background: #ccc
 }

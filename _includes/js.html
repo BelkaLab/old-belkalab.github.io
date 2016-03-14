@@ -2,7 +2,7 @@
 <script src="{{ "/assets/js/jquery.min.js" | prepend: site.baseurl }}"></script>
 <!-- jQuery plugins -->
 <script src="{{ "/assets/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/assets/js/jquery.masonry.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/isotope.pkgd.min.js" | prepend: site.baseurl }}"></script>
 
 {% if site.analytics %}
 <script>
@@ -18,9 +18,25 @@
 {% endif %}
 
 <script>
+// (function () {
+//   $('.project-grid').masonry({
+//     itemSelector: '.project-item'
+//   });
+// })();
+
 (function () {
-  $('.project-grid').masonry({
-    itemSelector: '.project-item'
-  });
+	var $grid = $('.project-grid');
+
+	$grid.isotope({
+		itemSelector: '.project-item'
+	});
+
+	$('.filters').on('click', function (){
+		var $this = $(this);
+		var filterValue = $this.attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+
+
 })();
 </script>

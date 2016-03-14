@@ -54,80 +54,47 @@
   </div>
 </div>
 
-<div class="container">
-
-  <h1>Open Source Project</h1>
-  <div class="project-grid">
+<div id="main">
+  <div class="container">
+    <h1>Open Source Project</h1>
+    <div class="project-grid">
       <div class="project-sizer"></div>
       
       <a href="/react-yearly-calendar" />
-        <div class="project-item project-item--normal" style="background: url('/assets/img/project/react_calender.jpg'); background-size: cover; background-position: center;">
+      <div class="project-item project-item--normal React web library" style="background: url('/assets/img/project/react_calender.jpg'); background-size: cover; background-position: center;">
 
-          <div class="project-item-title-container">
-            <span class="project-item-title">React Yearly Calendar</span>
-          </div>
-        </div>
-      </a>
-      
-      <a href="/gaugeview" />
-        <div class="project-item project-item--medium" style="background: url('/assets/img/project/gaugeview_big.jpg'); background-size: cover; background-position: center;">
-
-          <div class="project-item-title-container">
-            <span class="project-item-title">GaugeView</span>
-          </div>
-        </div>
-      </a>
-      
-      <a href="/Android-Toggle-Switch" />
-        <div class="project-item project-item--normal" style="background: url('/assets/img/project/android_toggle_switch.jpg'); background-size: cover; background-position: center;">
-
-          <div class="project-item-title-container">
-            <span class="project-item-title">Android Toggle Switch</span>
-          </div>
-        </div>
-      </a>
-      
-  </div>
-
-</div>
-
-<div id="librarywrap">
-  <div class="container">
-    <div>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li role="presentation" class="active"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">iOS</a></li>
-        <li role="presentation"><a href="#Android" aria-controls="Android" role="tab" data-toggle="tab">Andorid</a></li>
-        <li role="presentation"><a href="#Web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
-      </ul>
-
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane active" id="iOS">
-          <h4>iOS</h4>
-          
-          <a href="/gaugeview">GaugeView</a><br>
-          
-        </div>
-        <div role="tabpanel" class="tab-pane" id="Android">
-          <h4>Andorid</h4>
-          
-          <a href="/Android-Toggle-Switch">Android Toggle Switch</a><br>
-          
-        </div>
-        <div role="tabpanel" class="tab-pane" id="Web">
-          <h4>Web</h4>
-          
-          <a href="/react-yearly-calendar">React Yearly Calendar</a><br>
-           
+        <div class="project-item-title-container">
+          <span class="project-item-title">React Yearly Calendar</span>
         </div>
       </div>
-    </div>
+    </a>
+    
+      <a href="/gaugeview" />
+      <div class="project-item project-item--medium iOS library widget" style="background: url('/assets/img/project/gaugeview_big.jpg'); background-size: cover; background-position: center;">
+
+        <div class="project-item-title-container">
+          <span class="project-item-title">GaugeView</span>
+        </div>
+      </div>
+    </a>
+    
+      <a href="/Android-Toggle-Switch" />
+      <div class="project-item project-item--normal Android library widget" style="background: url('/assets/img/project/android_toggle_switch.jpg'); background-size: cover; background-position: center;">
+
+        <div class="project-item-title-container">
+          <span class="project-item-title">Android Toggle Switch</span>
+        </div>
+      </div>
+    </a>
+    
   </div>
+  
+  <div class="button filters" data-filter=".iOS">iOS</div>
+  <div class="button filters" data-filter=".Android">Android</div>
+  <div class="button filters" data-filter=".web">Web</div>
+  <div class="button filters" data-filter="*">All</div>
 </div>
-
-
-
+</div>
 
         <div id="footerwrap">
     <div class="container">
@@ -179,15 +146,31 @@
 <script src="/assets/js/jquery.min.js"></script>
 <!-- jQuery plugins -->
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/jquery.masonry.min.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
 
 
 
 <script>
+// (function () {
+//   $('.project-grid').masonry({
+//     itemSelector: '.project-item'
+//   });
+// })();
+
 (function () {
-  $('.project-grid').masonry({
-    itemSelector: '.project-item'
-  });
+	var $grid = $('.project-grid');
+
+	$grid.isotope({
+		itemSelector: '.project-item'
+	});
+
+	$('.filters').on('click', function (){
+		var $this = $(this);
+		var filterValue = $this.attr('data-filter');
+		$grid.isotope({ filter: filterValue });
+	});
+
+
 })();
 </script>
 
