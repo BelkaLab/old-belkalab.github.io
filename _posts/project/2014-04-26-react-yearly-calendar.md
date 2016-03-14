@@ -12,6 +12,6 @@ tags:
 - library
 ---
 
-###DESCRIPTION
+### DESCRIPTION
 
 React calendar component with yearly view.

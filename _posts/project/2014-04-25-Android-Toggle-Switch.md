@@ -12,6 +12,6 @@ tags:
 - widget
 ---
 
-###DESCRIPTION
+### DESCRIPTION
 
 A customizable extension of Android Switches that supports also more than 2 items.
