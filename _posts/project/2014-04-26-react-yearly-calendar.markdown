@@ -6,7 +6,10 @@ categories:
 size: project-item--normal
 img: react_calender.jpg
 thumb: react_calender.jpg
-tagged: React, library
+tags:
+- React
+- web
+- library
 ---
 
 ###DESCRIPTION

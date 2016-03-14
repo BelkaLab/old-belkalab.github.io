@@ -93,20 +93,40 @@
 
 <div id="librarywrap">
   <div class="container">
-    <h2>Libraries</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <h4>iOS</h4>
-      </div>
-      <div class="col-md-4">
-        <h4>Andorid</h4>
-      </div>
-      <div class="col-md-4">
-        <h4>Web</h4>
+    <div>
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#iOS" aria-controls="iOS" role="tab" data-toggle="tab">iOS</a></li>
+        <li role="presentation"><a href="#Android" aria-controls="Android" role="tab" data-toggle="tab">Andorid</a></li>
+        <li role="presentation"><a href="#Web" aria-controls="Web" role="tab" data-toggle="tab">Web</a></li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="iOS">
+          <h4>iOS</h4>
+          
+          <a href="/gaugeview">GaugeView</a><br>
+          
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Android">
+          <h4>Andorid</h4>
+          
+          <a href="/Android-Toggle-Switch">Android Toggle Switch</a><br>
+          
+        </div>
+        <div role="tabpanel" class="tab-pane" id="Web">
+          <h4>Web</h4>
+          
+          <a href="/react-yearly-calendar">React Yearly Calendar</a><br>
+           
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+
 
 
         <div id="footerwrap">
@@ -156,7 +176,7 @@
 
 
 <script>
-$(function () {
+(function () {
   $('.project-grid').masonry({
     itemSelector: '.project-item'
   });

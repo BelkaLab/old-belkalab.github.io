@@ -6,7 +6,10 @@ categories:
 size: project-item--normal
 img: android_toggle_switch.jpg
 thumb: android_toggle_switch.jpg
-tagged: Android, library, widget
+tags:
+- Android 
+- library 
+- widget
 ---
 
 ###DESCRIPTION

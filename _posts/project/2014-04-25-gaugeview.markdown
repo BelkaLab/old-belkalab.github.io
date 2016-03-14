@@ -6,7 +6,10 @@ categories:
 size: project-item--medium
 img: gaugeview_big.jpg
 thumb: gaugeview_thumb.jpg
-tagged: iOS, library, widget
+tags:
+- iOS 
+- library 
+- widget
 ---
 
 ###DESCRIPTION
