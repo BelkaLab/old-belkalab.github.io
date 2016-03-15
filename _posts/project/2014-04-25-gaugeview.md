@@ -10,6 +10,7 @@ tags:
 - iOS 
 - library 
 - widget
+github_repo: BelkaLab/GaugeView
 ---
 
 ### DESCRIPTION

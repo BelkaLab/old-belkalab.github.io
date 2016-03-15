@@ -10,6 +10,7 @@ tags:
 - Android 
 - library 
 - widget
+github_repo: BelkaLab/Android-Toggle-Switch
 ---
 
 ### DESCRIPTION

@@ -36,8 +36,8 @@ p {
   margin-bottom: 12px;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 26px;
   color: #384052;
   margin-top: 10px; }
 
@@ -366,6 +366,9 @@ a:focus {
   font-size: 1.2em;
   color: white; }
 
+.project-back-link {
+  margin-right: 1em; }
+
 #hero {
   background: #000;
   text-align: center;
@@ -397,3 +400,14 @@ a:focus {
     background: #ccc; }
   .button-group .button-checked {
     background: #01b2fe; }
+
+.project-details {
+  background: #0c2732;
+  color: #fff;
+  padding: 1em; }
+  .project-details .project-details__element {
+    display: block;
+    margin: 1em 0 1em 0; }
+    .project-details .project-details__element strong {
+      border-bottom: 1px dotted #fff;
+      padding-bottom: 2px; }

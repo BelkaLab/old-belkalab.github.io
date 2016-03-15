@@ -43,8 +43,8 @@ p {
 	margin-bottom: 12px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+	font-size: 16px;
+	line-height: 26px;
 	color: {{ site.colors.secondary }};
 	margin-top: 10px;
 }
@@ -435,6 +435,10 @@ $h-item: 260px;
 	}
 }
 
+.project-back-link {
+	margin-right: 1em;
+}
+
 #hero {
 	background: #000;
 	text-align: center;
@@ -476,5 +480,22 @@ $h-item: 260px;
 
 	.button-checked {
 		background: #01b2fe
+	}
+}
+
+
+.project-details {
+	background: #0c2732;
+	color: #fff;
+	padding: 1em;
+
+	.project-details__element {
+		display: block;
+		margin: 1em 0 1em 0;
+		
+		strong {
+			border-bottom: 1px dotted #fff;
+			padding-bottom: 2px
+		}
 	}
 }

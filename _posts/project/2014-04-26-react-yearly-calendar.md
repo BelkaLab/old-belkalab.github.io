@@ -10,6 +10,7 @@ tags:
 - React
 - web
 - library
+github_repo: BelkaLab/react-yearly-calendar
 ---
 
 ### DESCRIPTION

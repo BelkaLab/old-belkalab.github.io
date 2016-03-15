@@ -5,27 +5,47 @@ layout: default
 <div class="container mt">
     <div class="row">
         <div class="col-md-12">
-            <h1> {{ page.title }}</h1> 
+            <h1>
+                <a class="project-back-link" href="/"><i class="fa fa-angle-left"></i></a>
+                {{ page.title }}
+            </h1> 
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
-            <img class="project-header-iamge" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="{{ page.title }}" /> 
+            <img class="project-header-image" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="{{ page.title }}" /> 
         </div>
     </div>
     <div class="row">
-        <div class="col-lg-5 col-lg-offset-1">
+        <div class="col-lg-4">
+            <div class="project-details">
+                <h4>Project Details</h4>
+                <div class="hline"></div>
+                <div class="project-details__element">
+                    <strong>Date:</strong>&nbsp;
+                    {{ page.date | date: "%b %-d, %Y" }}
+                </div>
+                <div class="project-details__element">
+                    <strong>Authors:</strong>&nbsp;
+                    {{ page.author }}
+                </div>
+                <div class="project-details__element">
+                    <strong>Categories:</strong>&nbsp;
+                    {{ page.categories }}
+                </div>
+                <div class="project-details__element">
+                    <strong>Tags:</strong>&nbsp;
+                    {{ page.tags | join " " }}
+                </div>
+                <div class="project-details__element">
+                    <strong>Github:</strong>&nbsp;
+                    <a href="https://github.com/{{ page.github_repo }}" target="_blank">{{ page.github_repo }}</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
             <div class="spacing"></div>
             {{ content }}
-        </div>
-        <div class="col-lg-4 col-lg-offset-1">
-            <div class="spacing"></div>
-            <h4>Project Details</h4>
-            <div class="hline"></div>
-            <p><b>Date:</b> {{ page.date | date: "%b %-d, %Y" }}</p>
-            <p><b>Authors:</b> {{ page.author }}</p>
-            <p><b>Categories:</b> {{ page.categories }}</p>
-            <p><b>Tagged:</b> {{ page.tags | join " " }}</p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
