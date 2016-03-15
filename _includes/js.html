@@ -18,15 +18,18 @@
 {% endif %}
 
 <script>
-(function () {
+$(document).ready(function (){
 	var $grid = $('.project-grid');
 
 	$grid.isotope({
-		itemSelector: '.project-item'
+		itemSelector: '.project-item',
+		masonry: {
+      		columnWidth: 180,
+      		gutter: 5
+    	}
 	});
 
 	$('.filters').on('click', function (){
-
 		$('.filters').each(function() {
 			$(this).removeClass('button-checked');
 		});
@@ -36,5 +39,5 @@
 		$this.addClass('button-checked');
 		$grid.isotope({ filter: filterValue });
 	});
-})();
+});
 </script>

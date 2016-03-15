@@ -3,7 +3,7 @@ layout: project
 title:  "React Yearly Calendar"
 categories:
 - project
-size: project-item--normal
+size: project-item
 img: react_calender.jpg
 thumb: react_calender.jpg
 tags:

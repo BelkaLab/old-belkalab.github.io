@@ -8,23 +8,24 @@ layout: default
 <div id="main">
   <div class="container">
     <h1>Open Source Project</h1>
+    
     <div class="project-grid">
-      <div class="project-sizer"></div>
       {% for project in site.categories['project'] %}
-      <a href="{{project.url}}" />
-      <div class="project-item {{ project.size }} {{ project.tags | join " " }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
-
-        <div class="project-item-title-container">
-          <span class="project-item-title">{{ project.title }}</span>
+      <a href="{{project.url}}">
+        <div class="project-item {{ project.size }} {{ project.tags | join " " }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">{{ project.title }}</span>
+          </div>
         </div>
-      </div>
-    </a>
-    {% endfor %}
+      </a>
+      {% endfor %}
+    </div>
+
+    <div class="button-group">
+      <div class="button filters" data-filter=".iOS">iOS</div>
+      <div class="button filters" data-filter=".Android">Android</div>
+      <div class="button filters" data-filter=".web">Web</div>
+      <div class="button button-checked filters" data-filter="*">All</div>
+    </div>
   </div>
-  
-  <div class="button filters" data-filter=".iOS">iOS</div>
-  <div class="button filters" data-filter=".Android">Android</div>
-  <div class="button filters" data-filter=".web">Web</div>
-  <div class="button button-checked filters" data-filter="*">All</div>
-</div>
 </div>

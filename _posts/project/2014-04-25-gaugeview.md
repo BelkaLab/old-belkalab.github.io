@@ -3,7 +3,7 @@ layout: project
 title:  "GaugeView"
 categories:
 - project
-size: project-item--medium
+size: project-item--width2
 img: gaugeview_big.jpg
 thumb: gaugeview_thumb.jpg
 tags:

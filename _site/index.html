@@ -60,43 +60,42 @@
 <div id="main">
   <div class="container">
     <h1>Open Source Project</h1>
+    
     <div class="project-grid">
-      <div class="project-sizer"></div>
       
-      <a href="/react-yearly-calendar" />
-      <div class="project-item project-item--normal React web library" style="background: url('/assets/img/project/react_calender.jpg'); background-size: cover; background-position: center;">
-
-        <div class="project-item-title-container">
-          <span class="project-item-title">React Yearly Calendar</span>
+      <a href="/react-yearly-calendar">
+        <div class="project-item project-item React web library" style="background: url('/assets/img/project/react_calender.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">React Yearly Calendar</span>
+          </div>
         </div>
-      </div>
-    </a>
-    
-      <a href="/gaugeview" />
-      <div class="project-item project-item--medium iOS library widget" style="background: url('/assets/img/project/gaugeview_big.jpg'); background-size: cover; background-position: center;">
-
-        <div class="project-item-title-container">
-          <span class="project-item-title">GaugeView</span>
+      </a>
+      
+      <a href="/gaugeview">
+        <div class="project-item project-item--width2 iOS library widget" style="background: url('/assets/img/project/gaugeview_big.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">GaugeView</span>
+          </div>
         </div>
-      </div>
-    </a>
-    
-      <a href="/Android-Toggle-Switch" />
-      <div class="project-item project-item--normal Android library widget" style="background: url('/assets/img/project/android_toggle_switch.jpg'); background-size: cover; background-position: center;">
-
-        <div class="project-item-title-container">
-          <span class="project-item-title">Android Toggle Switch</span>
+      </a>
+      
+      <a href="/Android-Toggle-Switch">
+        <div class="project-item project-item Android library widget" style="background: url('/assets/img/project/android_toggle_switch.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">Android Toggle Switch</span>
+          </div>
         </div>
-      </div>
-    </a>
-    
+      </a>
+      
+    </div>
+
+    <div class="button-group">
+      <div class="button filters" data-filter=".iOS">iOS</div>
+      <div class="button filters" data-filter=".Android">Android</div>
+      <div class="button filters" data-filter=".web">Web</div>
+      <div class="button button-checked filters" data-filter="*">All</div>
+    </div>
   </div>
-  
-  <div class="button filters" data-filter=".iOS">iOS</div>
-  <div class="button filters" data-filter=".Android">Android</div>
-  <div class="button filters" data-filter=".web">Web</div>
-  <div class="button button-checked filters" data-filter="*">All</div>
-</div>
 </div>
 
         <div id="footerwrap">
@@ -154,15 +153,18 @@
 
 
 <script>
-(function () {
+$(document).ready(function (){
 	var $grid = $('.project-grid');
 
 	$grid.isotope({
-		itemSelector: '.project-item'
+		itemSelector: '.project-item',
+		masonry: {
+      		columnWidth: 180,
+      		gutter: 5
+    	}
 	});
 
 	$('.filters').on('click', function (){
-
 		$('.filters').each(function() {
 			$(this).removeClass('button-checked');
 		});
@@ -172,8 +174,7 @@
 		$this.addClass('button-checked');
 		$grid.isotope({ filter: filterValue });
 	});
-})();
+});
 </script>
-
     </body>
 </html>

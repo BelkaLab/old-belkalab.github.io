@@ -1,3 +1,6 @@
+---
+---
+
 /*	################################################################
 
 	Author: Carlos Alvarez
@@ -391,51 +394,45 @@ a:focus {
 	SITE THEME
 ################################################################# */
 
-.project-sizer,
-.project-item {
-	width: 20%;
-}
+$w-item: 180px;
+$h-item: 260px;
 
-.project-item {
-	margin: 0	5px 5px 0;
-	border: 1px solid #EEEEEE;
-	height: 260px;
-}
+.project-grid {
+	.project-item {
+		float: left;
+		width: $w-item;
+		height: $h-item;
+		border: 1px solid #EEEEEE;
+	}
 
-.project-item--normal {
-	width: 20%;
-	height: 360px;
-}
+	.project-item--width2 {
+		width: $w-item * 2;
+	}
 
-.project-item--medium {
-	width: 40%;
-	height: 360px;
-}
+	.project-item--height2 {
+		height: $h-item * 2;
+	}
 
-.project-item--big {
-	width: 50%;
-	height: 360px;
-}
+	.project-item-title-container {
+		position: absolute;
+		bottom: 0;
+		padding: 10px 7px;
+		background-color:  rgba(56, 64, 82, 0.8);
+		width: 100%;
+		-webkit-transition: .2s;
+		transition: .2s;
+	}
 
-.project-item-title-container {
-	position: absolute;
-	bottom: 0;
-	padding: 10px 7px;
-	background-color:  rgba(56, 64, 82, 0.8);
-	width: 100%;
-	-webkit-transition: .2s;
-	transition: .2s;
-}
+	.project-item-title-container:hover {
+		background-color:  #C72D22;
+	}
 
-.project-item-title-container:hover {
-	background-color:  #C72D22;
-}
-
-.project-item-title {
-	font-family: 'Lato';
-	font-weight: 300;
-	font-size: 1.5em;
-	color: white;
+	.project-item-title {
+		font-family: 'Lato';
+		font-weight: 300;
+		font-size: 1.5em;
+		color: white;
+	}
 }
 
 #hero {
@@ -456,17 +453,21 @@ a:focus {
 	background: #fff;
 }
 
-.button {
-	cursor: pointer;
-	display: inline-block;
-	border: 1px solid #ccc;
-	padding: 10px;
-}
+.button-group {
+	margin-top: 20px;
 
-.button:hover {
-	background: #ccc	
-}
+	.button {
+		cursor: pointer;
+		display: inline-block;
+		border: 1px solid #ccc;
+		padding: 10px;
+	}
 
-.button-checked {
-	background: #01b2fe
+	.button:hover {
+		background: #ccc	
+	}
+
+	.button-checked {
+		background: #01b2fe
+	}
 }
