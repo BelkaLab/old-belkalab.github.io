@@ -392,18 +392,19 @@ a:focus {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #01b2fe; }
+  border-bottom: 2px solid #c5cbd7; }
   .button-group .button {
     cursor: pointer;
     display: inline-block;
-    padding: 20px;
+    padding: 20px 40px 20px 40px;
     transition: .2s all; }
     .button-group .button i {
       font-size: 3em; }
   .button-group .button:hover {
-    background: #ccc; }
+    background: #C72D22;
+    color: #fff; }
   .button-group .button-checked {
-    background: #01b2fe; }
+    background: #c5cbd7; }
 
 .project-details {
   background: #0c2732;

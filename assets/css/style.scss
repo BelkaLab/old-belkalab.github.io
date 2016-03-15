@@ -466,12 +466,12 @@ $h-item: 260px;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	border-bottom: 2px solid #01b2fe;
+	border-bottom: 2px solid #c5cbd7;
 
 	.button {
 		cursor: pointer;
 		display: inline-block;
-		padding: 20px;
+		padding: 20px 40px 20px 40px;
 		transition: .2s all;
 		
 		i {
@@ -480,11 +480,12 @@ $h-item: 260px;
 	}
 
 	.button:hover {
-		background: #ccc	
+		background: #C72D22;
+		color: #fff;
 	}
 
 	.button-checked {
-		background: #01b2fe
+		background: #c5cbd7
 	}
 }
 
