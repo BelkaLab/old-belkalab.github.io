@@ -363,7 +363,7 @@ a:focus {
 .project-grid .project-item-title {
   font-family: 'Lato';
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white; }
 
 #hero {
@@ -382,12 +382,17 @@ a:focus {
   background: #fff; }
 
 .button-group {
-  margin-top: 20px; }
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #01b2fe; }
   .button-group .button {
     cursor: pointer;
     display: inline-block;
-    border: 1px solid #ccc;
-    padding: 10px; }
+    padding: 20px;
+    transition: .2s all; }
+    .button-group .button i {
+      font-size: 3em; }
   .button-group .button:hover {
     background: #ccc; }
   .button-group .button-checked {

@@ -430,7 +430,7 @@ $h-item: 260px;
 	.project-item-title {
 		font-family: 'Lato';
 		font-weight: 300;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		color: white;
 	}
 }
@@ -454,13 +454,20 @@ $h-item: 260px;
 }
 
 .button-group {
+	text-align: center;
 	margin-top: 20px;
+	margin-bottom: 20px;
+	border-bottom: 2px solid #01b2fe;
 
 	.button {
 		cursor: pointer;
 		display: inline-block;
-		border: 1px solid #ccc;
-		padding: 10px;
+		padding: 20px;
+		transition: .2s all;
+		
+		i {
+			font-size: 3em
+		}
 	}
 
 	.button:hover {
