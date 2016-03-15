@@ -7,7 +7,7 @@ size: project-item
 img: react_calender.jpg
 thumb: react_calender.jpg
 tags:
-- React
+- react
 - web
 - library
 github_repo: BelkaLab/react-yearly-calendar

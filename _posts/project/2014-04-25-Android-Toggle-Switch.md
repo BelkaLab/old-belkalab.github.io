@@ -7,7 +7,7 @@ size: project-item
 img: android_toggle_switch.jpg
 thumb: android_toggle_switch.jpg
 tags:
-- Android 
+- android 
 - library 
 - widget
 github_repo: BelkaLab/Android-Toggle-Switch
