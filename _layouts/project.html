@@ -11,16 +11,16 @@ layout: default
             </h1> 
         </div>
     </div>
+</div>
+
+<div 
+    class="project-header-image"
+    style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}') no-repeat 50% 50%">
+</div> 
+
+<div class="container">
     <div class="row">
-        <div class="col-md-12">
-            <div 
-                class="project-header-image"
-                style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}') no-repeat 50% 50%">
-            </div> 
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-lg-4">
+        <div class="col-md-4">
             <div class="project-details">
                 <h4>Project Details</h4>
                 <div class="hline"></div>
@@ -51,7 +51,7 @@ layout: default
                 </div>
             </div>
         </div>
-        <div class="col-lg-8">
+        <div class="col-md-8">
             <div class="spacing"></div>
             {{ content }}
         </div>
