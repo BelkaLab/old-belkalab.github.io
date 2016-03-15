@@ -25,23 +25,28 @@ layout: default
                 <h4>Project Details</h4>
                 <div class="hline"></div>
                 <div class="project-details__element">
-                    <strong>Date:</strong>&nbsp;
+                    <i class="fa fa-clock-o"></i>
+                    <strong>Date:</strong>
                     {{ page.date | date: "%b %-d, %Y" }}
                 </div>
                 <div class="project-details__element">
-                    <strong>Authors:</strong>&nbsp;
+                    <i class="fa fa-users"></i>
+                    <strong>Authors:</strong>
                     {{ page.author }}
                 </div>
                 <div class="project-details__element">
-                    <strong>Categories:</strong>&nbsp;
+                    <i class="fa fa-tasks"></i>
+                    <strong>Categories:</strong>
                     {{ page.categories }}
                 </div>
                 <div class="project-details__element">
-                    <strong>Tags:</strong>&nbsp;
+                    <i class="fa fa-tags"></i>
+                    <strong>Tags:</strong>
                     {{ page.tags | join " " }}
                 </div>
                 <div class="project-details__element">
-                    <strong>Github:</strong>&nbsp;
+                    <i class="fa fa-code"></i>
+                    <strong>Github:</strong>
                     <a href="https://github.com/{{ page.github_repo }}" target="_blank">{{ page.github_repo }}</a>
                 </div>
             </div>

@@ -95,11 +95,15 @@ a:focus {
   margin-left: 10px !important;
   font-size: 1.5em !important;
   font-family: 'Raleway', sans-serif;
-  font-weight: 900;
+  font-weight: 400;
   float: right; }
 
 .navbar-header .navbar-brand {
   color: white; }
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #01b2fe; }
 
 .navbar-default .navbar-nav > li > a {
   color: white;
@@ -408,9 +412,12 @@ a:focus {
   .project-details .project-details__element {
     display: block;
     margin: 1em 0 1em 0; }
+    .project-details .project-details__element i {
+      margin-right: .5em; }
     .project-details .project-details__element strong {
       border-bottom: 1px dotted #fff;
-      padding-bottom: 2px; }
+      padding-bottom: 2px;
+      margin-right: .5em; }
 
 .project-title {
   margin: 1em 0 1em 0; }
