@@ -5,7 +5,7 @@ layout: default
 <div class="container mt">
     <div class="row">
         <div class="col-md-12">
-            <h1>
+            <h1 class="project-title">
                 <a class="project-back-link" href="/"><i class="fa fa-angle-left"></i></a>
                 {{ page.title }}
             </h1> 
@@ -13,7 +13,10 @@ layout: default
     </div>
     <div class="row">
         <div class="col-md-12">
-            <img class="project-header-image" src="{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}" alt="{{ page.title }}" /> 
+            <div 
+                class="project-header-image"
+                style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ page.img }}') no-repeat 50% 50%">
+            </div> 
         </div>
     </div>
     <div class="row">
