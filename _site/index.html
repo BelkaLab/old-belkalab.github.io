@@ -15,38 +15,30 @@
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <!--<link rel="stylesheet" href="/css/main.css">-->
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
+
 
     <body>
         <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="navbar-header">
+          <a target="_blank" href="http://belka.us">
+            <img class="navbar-belka-logo" src="/assets/img/general/belka-logo.svg" alt=""/>
+          </a>
+          <a class="navbar-brand" href="/">Code @ Belka</a>
+        </div>
 
-    <div class="navbar-header">
-      <a target="_blank" href="http://belka.us">
-        <img class="navbar-belka-logo" src="/assets/img/general/belka-logo.svg" alt=""/>
-      </a>
-      <a class="navbar-brand" href="/">Code @ Belka</a>
+        <div class="navbar-collapse collapse navbar-right">
+
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-
-    <div class="navbar-collapse collapse navbar-right">
-
-    </div><!--/.nav-collapse -->
   </div>
 </div>
 
@@ -58,152 +50,141 @@
 </div><!-- /headerwrap -->
 
 
-  <div id="portfoliowrap">
-    <div class="portfolio-centered">
-        <h3>Open Source Project</h3>
-        <div class="recentitems portfolio">
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/react_calender.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">react-yearly-calendar</h3>
-                                <a href="/react-yearly-calendar" class="dmbutton" data-animate="fadeInUp">Open</a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/gaugeview_big.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">GaugeView</h3>
-                                <a href="/gaugeview" class="dmbutton" data-animate="fadeInUp">Open</a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/android_toggle_switch.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">Android-Toggle-Switch</h3>
-                                <a href="/Android-Toggle-Switch" class="dmbutton" data-animate="fadeInUp">Open</a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-        </div><!-- portfolio -->
-    </div><!-- portfolio container -->
-</div><!--/Portfoliowrap -->
+<!-- Hero -->
+<div id="hero">
+  <div class="container">
+    <h1>Belka Open Source</h1>
+  </div>
+</div>
 
+<div id="main">
+  <div class="container">
+    <h2>Open Source Projects</h2>
+    
+    <div class="button-group">
+      <div class="button button-checked filters" data-filter="*">
+        <i class="fa fa-list"></i>
+      </div>
+      <div class="button filters" data-filter=".iOS">
+        <i class="fa fa-apple"></i>
+      </div>
+      <div class="button filters" data-filter=".android">
+        <i class="fa fa-android"></i>
+      </div>
+      <div class="button filters" data-filter=".web">
+        <i class="fa fa-desktop"></i>
+      </div>
+    </div>
 
+    <div class="project-grid">
+      
+      <a href="/react-yearly-calendar">
+        <div class="project-item project-item react web library" style="background: url('/assets/img/project/react_calender.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">React Yearly Calendar</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="/gaugeview">
+        <div class="project-item project-item--width2 iOS library widget" style="background: url('/assets/img/project/gaugeview_big.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">GaugeView</span>
+          </div>
+        </div>
+      </a>
+      
+      <a href="/Android-Toggle-Switch">
+        <div class="project-item project-item android library widget" style="background: url('/assets/img/project/android_toggle_switch.jpg'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">Android Toggle Switch</span>
+          </div>
+        </div>
+      </a>
+      
+    </div>
 
+  </div>
+</div>
 
         <div id="footerwrap">
     <div class="container">
         <div class="row">
-            <!-- TODO: Not implemented -->
+			<div class="col-md-4">
+					<h4>Belka srl</h4>
+					<div class="hline-w"></div>
+				<p>
+					P.Iva 02397550225<br>
+					via Sanseverino 95<br> 
+					c/o Impact Hub<br> 	
+					Trento (TN)<br> 
+					Italy<br>
+					<br>
+					<a href="mailto:hello@belka.us">hello@belka.us</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>News</h4>
+				<div class="hline-w"></div>
+				<p>
+					<a href="http://belka.us/en/blog/">Blog</a><br>
+					<a href="http://belka.us/en/portfolio/">Portfolio</a><br>
+					<a href="http://belka.us/lavora-con-noi/">Careers</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>Social</h4>
+				<div class="hline-w"></div>
+				<p>
+                	<a href="https://www.facebook.com/BelkaDigitalLab" target="_blank">Facebook</a><br>
+                	<a href="https://github.com/BelkaLab" target="_blank">Github</a><br>
+    				<a href="https://twitter.com/BelkaDigitalLab" target="_blank">Twitter</a><br>
+                	<a href="http://instagram.com/belkadigital" target="_blank">Instagram</a>
+    			</p>
+			</div>
         </div><! --/row -->
+        <div class="row">
+        	<div class="col-md-12">
+        		<hr>
+        		<p class="centered">
+        			COPYRIGHT 2016 - BELKA SRL
+        		</p>
+        	</div>
+        </div>
     </div><! --/container -->
 </div><! --/footerwrap -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- jQuery injection -->
+<script src="/assets/js/jquery.min.js"></script>
+<!-- jQuery plugins -->
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/retina-1.1.0.js"></script>
-<script src="/assets/js/jquery.hoverdir.js"></script>
-<script src="/assets/js/jquery.hoverex.min.js"></script>
-<script src="/assets/js/jquery.prettyPhoto.js"></script>
-<script src="/assets/js/jquery.isotope.min.js"></script>
-<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+
+
 
 <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
+$(document).ready(function (){
+	var $grid = $('.project-grid');
+
+	$grid.isotope({
+		itemSelector: '.project-item',
 		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
+      		columnWidth: 180,
+      		gutter: 5
+    	}
 	});
-})(jQuery);
+
+	$('.filters').on('click', function (){
+		$('.filters').each(function() {
+			$(this).removeClass('button-checked');
+		});
+
+		var $this = $(this);
+		var filterValue = $this.attr('data-filter');
+		$this.addClass('button-checked');
+		$grid.isotope({ filter: filterValue });
+	});
+});
 </script>
     </body>
 </html>

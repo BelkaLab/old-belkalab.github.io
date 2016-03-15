@@ -9,70 +9,95 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>Code @ Belka - react-yearly-calendar</title>
+    <title>Code @ Belka - React Yearly Calendar</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <!--<link rel="stylesheet" href="/css/main.css">-->
-
-
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
+
 
     <body>
         <!-- Fixed navbar -->
 <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="navbar-header">
+          <a target="_blank" href="http://belka.us">
+            <img class="navbar-belka-logo" src="/assets/img/general/belka-logo.svg" alt=""/>
+          </a>
+          <a class="navbar-brand" href="/">Code @ Belka</a>
+        </div>
 
-    <div class="navbar-header">
-      <a target="_blank" href="http://belka.us">
-        <img class="navbar-belka-logo" src="/assets/img/general/belka-logo.svg" alt=""/>
-      </a>
-      <a class="navbar-brand" href="/">Code @ Belka</a>
+        <div class="navbar-collapse collapse navbar-right">
+
+        </div><!--/.nav-collapse -->
+      </div>
     </div>
-
-    <div class="navbar-collapse collapse navbar-right">
-
-    </div><!--/.nav-collapse -->
   </div>
 </div>
 
 
             <div class="container mt">
     <div class="row">
-
-        <img class="project-header-iamge" src="/assets/img/project/react_calender.jpg" alt="" />
-
-        <div class="col-lg-5 col-lg-offset-1">
+        <div class="col-md-12">
+            <h1 class="project-title">
+                <a class="project-back-link" href="/"><i class="fa fa-angle-left"></i></a>
+                React Yearly Calendar
+            </h1> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div 
+                class="project-header-image"
+                style="background: url('/assets/img/project/react_calender.jpg') no-repeat 50% 50%">
+            </div> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="project-details">
+                <h4>Project Details</h4>
+                <div class="hline"></div>
+                <div class="project-details__element">
+                    <i class="fa fa-clock-o"></i>
+                    <strong>Date:</strong>
+                    Apr 26, 2014
+                </div>
+                <div class="project-details__element">
+                    <i class="fa fa-users"></i>
+                    <strong>Authors:</strong>
+                    
+                </div>
+                <div class="project-details__element">
+                    <i class="fa fa-tasks"></i>
+                    <strong>Categories:</strong>
+                    project
+                </div>
+                <div class="project-details__element">
+                    <i class="fa fa-tags"></i>
+                    <strong>Tags:</strong>
+                    react web library
+                </div>
+                <div class="project-details__element">
+                    <i class="fa fa-code"></i>
+                    <strong>Github:</strong>
+                    <a href="https://github.com/BelkaLab/react-yearly-calendar" target="_blank">BelkaLab/react-yearly-calendar</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
             <div class="spacing"></div>
-
-            <p>###DESCRIPTION</p>
+            <h3 id="description">DESCRIPTION</h3>
 
 <p>React calendar component with yearly view.</p>
 
-
-        </div>
-        <div class="col-lg-4 col-lg-offset-1">
-            <div class="spacing"></div>
-            <h4>Project Details</h4>
-            <div class="hline"></div>
-            <p><b>Date:</b> Apr 25, 2014</p>
-            <p><b>Authors:</b> </p>
-            <p><b>Categories:</b> project</p>
-            <p><b>Tagged:</b> React, library</p>
         </div>
     </div><! --/row -->
 </div><! --/container -->
@@ -81,101 +106,81 @@
         <div id="footerwrap">
     <div class="container">
         <div class="row">
-            <!-- TODO: Not implemented -->
+			<div class="col-md-4">
+					<h4>Belka srl</h4>
+					<div class="hline-w"></div>
+				<p>
+					P.Iva 02397550225<br>
+					via Sanseverino 95<br> 
+					c/o Impact Hub<br> 	
+					Trento (TN)<br> 
+					Italy<br>
+					<br>
+					<a href="mailto:hello@belka.us">hello@belka.us</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>News</h4>
+				<div class="hline-w"></div>
+				<p>
+					<a href="http://belka.us/en/blog/">Blog</a><br>
+					<a href="http://belka.us/en/portfolio/">Portfolio</a><br>
+					<a href="http://belka.us/lavora-con-noi/">Careers</a>
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>Social</h4>
+				<div class="hline-w"></div>
+				<p>
+                	<a href="https://www.facebook.com/BelkaDigitalLab" target="_blank">Facebook</a><br>
+                	<a href="https://github.com/BelkaLab" target="_blank">Github</a><br>
+    				<a href="https://twitter.com/BelkaDigitalLab" target="_blank">Twitter</a><br>
+                	<a href="http://instagram.com/belkadigital" target="_blank">Instagram</a>
+    			</p>
+			</div>
         </div><! --/row -->
+        <div class="row">
+        	<div class="col-md-12">
+        		<hr>
+        		<p class="centered">
+        			COPYRIGHT 2016 - BELKA SRL
+        		</p>
+        	</div>
+        </div>
     </div><! --/container -->
 </div><! --/footerwrap -->
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- jQuery injection -->
+<script src="/assets/js/jquery.min.js"></script>
+<!-- jQuery plugins -->
 <script src="/assets/js/bootstrap.min.js"></script>
-<script src="/assets/js/retina-1.1.0.js"></script>
-<script src="/assets/js/jquery.hoverdir.js"></script>
-<script src="/assets/js/jquery.hoverex.min.js"></script>
-<script src="/assets/js/jquery.prettyPhoto.js"></script>
-<script src="/assets/js/jquery.isotope.min.js"></script>
-<script src="/assets/js/custom.js"></script>
+<script src="/assets/js/isotope.pkgd.min.js"></script>
+
+
 
 <script>
-// Portfolio
-(function($) {
-	"use strict";
-	var $container = $('.portfolio'),
-		$items = $container.find('.portfolio-item'),
-		portfolioLayout = 'fitRows';
-		
-		if( $container.hasClass('portfolio-centered') ) {
-			portfolioLayout = 'masonry';
-		}
-				
-		$container.isotope({
-			filter: '*',
-			animationEngine: 'best-available',
-			layoutMode: portfolioLayout,
-			animationOptions: {
-			duration: 750,
-			easing: 'linear',
-			queue: false
-		},
+$(document).ready(function (){
+	var $grid = $('.project-grid');
+
+	$grid.isotope({
+		itemSelector: '.project-item',
 		masonry: {
-		}
-		}, refreshWaypoints());
-		
-		function refreshWaypoints() {
-			setTimeout(function() {
-			}, 1000);   
-		}
-				
-		$('nav.portfolio-filter ul a').on('click', function() {
-				var selector = $(this).attr('data-filter');
-				$container.isotope({ filter: selector }, refreshWaypoints());
-				$('nav.portfolio-filter ul a').removeClass('active');
-				$(this).addClass('active');
-				return false;
-		});
-		
-		function getColumnNumber() { 
-			var winWidth = $(window).width(), 
-			columnNumber = 1;
-		
-			if (winWidth > 1200) {
-				columnNumber = 5;
-			} else if (winWidth > 950) {
-				columnNumber = 4;
-			} else if (winWidth > 600) {
-				columnNumber = 3;
-			} else if (winWidth > 400) {
-				columnNumber = 2;
-			} else if (winWidth > 250) {
-				columnNumber = 1;
-			}
-				return columnNumber;
-			}       
-			
-			function setColumns() {
-				var winWidth = $(window).width(), 
-				columnNumber = getColumnNumber(), 
-				itemWidth = Math.floor(winWidth / columnNumber);
-				
-				$container.find('.portfolio-item').each(function() { 
-					$(this).css( { 
-					width : itemWidth + 'px' 
-				});
-			});
-		}
-		
-		function setPortfolio() { 
-			setColumns();
-			$container.isotope('reLayout');
-		}
-			
-		$container.imagesLoaded(function () { 
-			setPortfolio();
-		});
-		
-		$(window).on('resize', function () { 
-		setPortfolio();          
+      		columnWidth: 180,
+      		gutter: 5
+    	}
 	});
-})(jQuery);
+
+	$('.filters').on('click', function (){
+		$('.filters').each(function() {
+			$(this).removeClass('button-checked');
+		});
+
+		var $this = $(this);
+		var filterValue = $this.attr('data-filter');
+		$this.addClass('button-checked');
+		$grid.isotope({ filter: filterValue });
+	});
+});
 </script>
     </body>
 </html>

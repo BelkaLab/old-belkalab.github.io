@@ -15,6 +15,7 @@ description: >
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://belka.us" # the base hostname & protocol for your site
 twitter_username: BelkaDigitalLab
+github_sername: BelkaLab
 permalink: "/:title"
 
 # Build settings
@@ -28,3 +29,4 @@ colors:  #in hex code if not noted else
   link_hover: "#01b2fe"
   footer_heading: "#ffffff"
   footer_content: "#bfc9d3"
+

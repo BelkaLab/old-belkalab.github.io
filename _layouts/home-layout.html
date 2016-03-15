@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{% include header.html %}
+
+{% include hero.html %}
+
+<div id="main">
+  <div class="container">
+    <h2>Open Source Projects</h2>
+    
+    <div class="button-group">
+      <div class="button button-checked filters" data-filter="*">
+        <i class="fa fa-list"></i>
+      </div>
+      <div class="button filters" data-filter=".iOS">
+        <i class="fa fa-apple"></i>
+      </div>
+      <div class="button filters" data-filter=".android">
+        <i class="fa fa-android"></i>
+      </div>
+      <div class="button filters" data-filter=".web">
+        <i class="fa fa-desktop"></i>
+      </div>
+    </div>
+
+    <div class="project-grid">
+      {% for project in site.categories['project'] %}
+      <a href="{{project.url}}">
+        <div class="project-item {{ project.size }} {{ project.tags | join " " }}" style="background: url('{{ "/assets/img/project/" | prepend: site.baseurl }}{{ project.img }}'); background-size: cover; background-position: center;">
+          <div class="project-item-title-container">
+            <span class="project-item-title">{{ project.title }}</span>
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
