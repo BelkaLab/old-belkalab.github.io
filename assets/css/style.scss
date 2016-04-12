@@ -34,14 +34,14 @@ body {
 	}
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'Lato', sans-serif;
+	font-family: brandon-grotesque,sans-serif;
 	font-weight: 700;
 }
 
 p {
 	padding: 0;
 	margin-bottom: 12px;
-	font-family: 'Lato', sans-serif;
+	font-family: Merriweather,serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 26px;
@@ -374,7 +374,7 @@ a:focus {
 /* Footer */
 #footerwrap {
 	padding-top: 60px;
-	background: {{ site.colors.secondary }};
+	background: #0c2732;
 }
 
 #footerwrap p {
@@ -382,6 +382,7 @@ a:focus {
 }
 
 #footerwrap h4 {
+	font-family: brandon-grotesque,sans-serif;
 	color: {{ site.colors.footer_heading }};
 }
 
@@ -445,7 +446,7 @@ $h-item: 260px;
 }
 
 #hero {
-	background: #000;
+	background: #0c2732;
 	text-align: center;
 	min-height: 300px;
 	h1 {
