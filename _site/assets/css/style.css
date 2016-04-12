@@ -31,13 +31,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: brandon-grotesque,sans-serif;
   font-weight: 700; }
 
+h4 {
+  font-size: 3rem;
+  margin-top: 23px;
+  margin-bottom: 20px; }
+
 p {
   padding: 0;
   margin-bottom: 12px;
   font-family: Merriweather,serif;
   font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 1.7;
   color: #384052;
   margin-top: 10px; }
 
@@ -55,10 +60,10 @@ ol {
   padding-left: 26px; }
 
 a {
-  color: #428bca;
   padding: 0;
   margin: 0;
   text-decoration: none;
+  color: #e3e8e1;
   -webkit-transition: background-color .4s linear, color .4s linear;
   -moz-transition: background-color .4s linear, color .4s linear;
   -o-transition: background-color .4s linear, color .4s linear;
@@ -94,7 +99,7 @@ a:focus {
 .navbar-brand {
   margin-left: 10px !important;
   font-size: 1.5em !important;
-  font-family: 'Raleway', sans-serif;
+  font-family: brandon-grotesque,sans-serif;
   font-weight: 400;
   float: right; }
 
@@ -325,15 +330,21 @@ a:focus {
 
 /* Footer */
 #footerwrap {
+  font-size: 14px;
   padding-top: 60px;
   background: #0c2732; }
 
 #footerwrap p {
-  color: #bfc9d3; }
+  padding-top: 0px;
+  font-size: 14px;
+  color: #e3e8e1; }
 
 #footerwrap h4 {
   font-family: brandon-grotesque,sans-serif;
-  color: #ffffff; }
+  color: #e3e8e1; }
+
+#footerwrap .container {
+  padding: 0px; }
 
 #footerwrap i {
   font-size: 30px;
@@ -342,6 +353,13 @@ a:focus {
 
 #footerwrap i:hover {
   color: #FFFFFF; }
+
+#footerwrap #copyleft {
+  font-family: brandon-grotesque,sans-serif;
+  text-align: center;
+  font-size: 9pt;
+  text-transform: uppercase;
+  font-weight: 100; }
 
 /*	################################################################
 	SITE THEME
@@ -366,7 +384,7 @@ a:focus {
 .project-grid .project-item-title-container:hover {
   background-color: #C72D22; }
 .project-grid .project-item-title {
-  font-family: 'Lato';
+  font-family: Merriweather,serif;
   font-weight: 300;
   font-size: 1.2em;
   color: white; }
