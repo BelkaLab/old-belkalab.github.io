@@ -381,7 +381,7 @@ a:focus {
 /* Footer */
 #footerwrap {
     font-size: 14px;
-	padding-top: 60px;
+	padding-top: 1em;
 	background: #0c2732;
 }
 
@@ -492,8 +492,10 @@ $h-item: 260px;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	border-bottom: 2px solid #c5cbd7;
+	width: 100%;
 
 	.button {
+		font-family: brandon-grotesque,sans-serif;
 		cursor: pointer;
 		display: inline-block;
 		padding: 20px 40px 20px 40px;
@@ -504,19 +506,14 @@ $h-item: 260px;
 		}
 	}
 
-	p {
-		text-align: center;
-		font-family: 'Lato',sans-serif;
-		margin:0px
-	}
 
 	.button:hover {
-		background: #C72D22;
+		background: #c52f29;
 		color: #fff;
 	}
 
 	.button-checked {
-		background: #c5cbd7
+		background: #c5cbd7;
 	}
 }
 

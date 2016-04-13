@@ -330,7 +330,7 @@ a:focus {
 /* Footer */
 #footerwrap {
   font-size: 14px;
-  padding-top: 60px;
+  padding-top: 1em;
   background: #0c2732; }
 
 #footerwrap p {
@@ -411,20 +411,18 @@ a:focus {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 20px;
-  border-bottom: 2px solid #c5cbd7; }
+  border-bottom: 2px solid #c5cbd7;
+  width: 100%; }
   .button-group .button {
+    font-family: brandon-grotesque,sans-serif;
     cursor: pointer;
     display: inline-block;
     padding: 20px 40px 20px 40px;
     transition: .5s all; }
     .button-group .button i {
       font-size: 3em; }
-  .button-group p {
-    text-align: center;
-    font-family: 'Lato',sans-serif;
-    margin: 0px; }
   .button-group .button:hover {
-    background: #C72D22;
+    background: #c52f29;
     color: #fff; }
   .button-group .button-checked {
     background: #c5cbd7; }
