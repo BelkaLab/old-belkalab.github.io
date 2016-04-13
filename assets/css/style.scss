@@ -127,7 +127,7 @@ a:focus {
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-	color: #01b2fe;	
+	color: #01b2fe;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -150,8 +150,8 @@ a:focus {
 	border-color: transparent;
 }
 
+
 .navbar-belka-logo {
-	margin-top: 5px;
 	height: 40px;
 }
 
@@ -398,7 +398,7 @@ a:focus {
 
 #footerwrap .container {
 	padding: 0px;
-	
+
 }
 
 #footerwrap i {
@@ -469,7 +469,7 @@ $h-item: 260px;
 }
 
 #hero {
-    	background: url('../img/code.jpg'); 
+    	background: url('../img/code.jpg');
 	text-align: center;
 	min-height: 300px;
 	h1 {
@@ -487,8 +487,8 @@ $h-item: 260px;
 }
 
 .button-group {
-	text-align: center;
-	margin-top: 20px;
+	text-align: left;
+	margin-top: 50px;
 	margin-bottom: 20px;
 	border-bottom: 2px solid #c5cbd7;
 
@@ -497,7 +497,7 @@ $h-item: 260px;
 		display: inline-block;
 		padding: 20px 40px 20px 40px;
 		transition: .2s all;
-		
+
 		i {
 			font-size: 3em
 		}
@@ -525,7 +525,7 @@ $h-item: 260px;
 	.project-details__element {
 		display: block;
 		margin: 1em 0 1em 0;
-		
+
 		i {
 			margin-right: .5em;
 		}

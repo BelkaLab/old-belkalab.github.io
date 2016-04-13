@@ -127,7 +127,6 @@ a:focus {
   border-color: transparent; }
 
 .navbar-belka-logo {
-  margin-top: 5px;
   height: 40px; }
 
 .dropdown-menu {
@@ -408,8 +407,8 @@ a:focus {
   background: #fff; }
 
 .button-group {
-  text-align: center;
-  margin-top: 20px;
+  text-align: left;
+  margin-top: 50px;
   margin-bottom: 20px;
   border-bottom: 2px solid #c5cbd7; }
   .button-group .button {
