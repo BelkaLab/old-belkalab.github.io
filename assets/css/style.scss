@@ -487,7 +487,8 @@ $h-item: 260px;
 }
 
 .button-group {
-	text-align: left;
+  display: inline-block;
+	text-align: center;
 	margin-top: 50px;
 	margin-bottom: 20px;
 	border-bottom: 2px solid #c5cbd7;
@@ -496,11 +497,17 @@ $h-item: 260px;
 		cursor: pointer;
 		display: inline-block;
 		padding: 20px 40px 20px 40px;
-		transition: .2s all;
+		transition: .5s all;
 
 		i {
 			font-size: 3em
 		}
+	}
+
+	p {
+		text-align: center;
+		font-family: 'Lato',sans-serif;
+		margin:0px
 	}
 
 	.button:hover {
