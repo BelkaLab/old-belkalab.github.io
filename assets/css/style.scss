@@ -44,6 +44,12 @@ h4 {
 	margin-top: 23px;
 	margin-bottom: 20px;
 }
+
+#titolo {
+	text-align: center;
+}
+
+
 p {
 	padding: 0;
 	margin-bottom: 12px;
@@ -385,6 +391,8 @@ a:focus {
 	background: #0c2732;
 }
 
+
+
 #footerwrap p {
 	padding-top: 0px;
 	font-size: 14px;
@@ -395,10 +403,16 @@ a:focus {
 	font-family: brandon-grotesque,sans-serif;
 	color: #e3e8e1;
 }
+#footerwrap .col-md-4 {
+	float: left;
+	width: 30%;
+}
 
-#footerwrap .container {
-	padding: 0px;
+#footerwrap .row::after {
+}
 
+.copyleft {
+	color: #e3e8e1;
 }
 
 #footerwrap i {
@@ -473,10 +487,10 @@ $h-item: 260px;
 	text-align: center;
 	min-height: 300px;
 	h1 {
+		font-size: 50px;
 		margin: 0;
 		color: #fff;
 		line-height: 300px;
-		font-size: xx-large;
 	}
 }
 

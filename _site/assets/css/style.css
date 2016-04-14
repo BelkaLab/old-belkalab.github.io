@@ -36,6 +36,9 @@ h4 {
   margin-top: 23px;
   margin-bottom: 20px; }
 
+#titolo {
+  text-align: center; }
+
 p {
   padding: 0;
   margin-bottom: 12px;
@@ -342,8 +345,12 @@ a:focus {
   font-family: brandon-grotesque,sans-serif;
   color: #e3e8e1; }
 
-#footerwrap .container {
-  padding: 0px; }
+#footerwrap .col-md-4 {
+  float: left;
+  width: 30%; }
+
+.copyleft {
+  color: #e3e8e1; }
 
 #footerwrap i {
   font-size: 30px;
@@ -396,10 +403,10 @@ a:focus {
   text-align: center;
   min-height: 300px; }
   #hero h1 {
+    font-size: 50px;
     margin: 0;
     color: #fff;
-    line-height: 300px;
-    font-size: xx-large; }
+    line-height: 300px; }
 
 #main {
   padding-top: 60px;
