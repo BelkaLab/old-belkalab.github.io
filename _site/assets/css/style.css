@@ -106,8 +106,12 @@ a:focus {
   font-weight: 400;
   float: right; }
 
+.navbar-header {
+  float: left; }
+
 .navbar-header .navbar-brand {
-  color: white; }
+  color: white;
+  float: right; }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
@@ -130,6 +134,7 @@ a:focus {
   border-color: transparent; }
 
 .navbar-belka-logo {
+  float: left;
   height: 40px; }
 
 .dropdown-menu {
@@ -406,7 +411,7 @@ a:focus {
     font-size: 50px;
     margin: 0;
     color: #fff;
-    line-height: 300px; }
+    margin-top: 120px; }
 
 #main {
   padding-top: 60px;

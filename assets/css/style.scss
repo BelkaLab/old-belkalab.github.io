@@ -127,8 +127,13 @@ a:focus {
 	float: right;
 }
 
+.navbar-header {
+	float: left;
+}
+
 .navbar-header .navbar-brand {
 	color: white;
+	float: right;
 }
 
 .navbar-default .navbar-brand:hover,
@@ -158,6 +163,7 @@ a:focus {
 
 
 .navbar-belka-logo {
+	float: left;
 	height: 40px;
 }
 
@@ -490,7 +496,7 @@ $h-item: 260px;
 		font-size: 50px;
 		margin: 0;
 		color: #fff;
-		line-height: 300px;
+		margin-top: 120px;
 	}
 }
 
